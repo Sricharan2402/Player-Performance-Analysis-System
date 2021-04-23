@@ -5,7 +5,7 @@ import { useAuth } from "../../auth/Auth";
 
 import Navbar from "../Navbar";
 
-export default function ManagerChat() {
+export default function ChatComponent() {
   const { currentUser, userDetails, userType } = useAuth();
   const otherType = userType == "manager" ? "players" : "manager";
   const playersRef = db.collection(otherType);
@@ -127,7 +127,9 @@ function MessageContainer({ messages, sendMessage, text, setText }) {
             setText(e.target.value);
           }}
         />
-        <button type="submit">💬</button>
+        <button type="submit" disabled={!text}>
+          💬
+        </button>
       </form>
     </div>
   );

@@ -43,6 +43,9 @@ export default function Navbar() {
           <a className="dropdown-item" href="messenger">
             Messages
           </a>
+          <a className="dropdown-item" href="chatroom">
+            Chat Room
+          </a>
           <div className="dropdown-divider" />
           <button
             className="dropdown-item"
