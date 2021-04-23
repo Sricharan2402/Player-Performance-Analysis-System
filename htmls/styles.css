@@ -1,0 +1,253 @@
+/*
+body {
+  font-family: "Open Sans";
+  background-color: #206bb6;
+}
+
+.signin-card {
+  width: 480px;
+  background-color: #99154a !important;
+  box-shadow: 0px 0px 20px #082d52;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.signin-card:hover {
+  transform: scale(1.05);
+}
+.signin-header {
+  font-weight: 500;
+  padding: 20px 30px;
+  font-size: 30px;
+  color: rgb(226, 226, 226);
+}
+.signin-form {
+  padding: 30px;
+  font-size: 18px;
+}
+.form-group {
+  padding: 12px 0px;
+}
+.signin-btn {
+  font-size: 18px;
+  margin: 20px 0px;
+  padding: 8px 25px;
+  background-color: #206bb6;
+  color: rgb(226, 226, 226);
+  transition: transform 0.2s;
+}
+.signin-btn:hover {
+  transform: scale(0.95);
+  color: #edbc00;
+}
+.signin-footer {
+  text-align: center;
+  padding: 20px;
+  color: rgb(226, 226, 226);
+  font-size: 15px;
+}
+.input-group {
+  display: inline-block;
+  width: 100%;
+}
+.form-control {
+  height: 50px;
+}
+.fas {
+  padding: 15px;
+}
+.input-group-prepend-icon {
+  background-color: #edbc00;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+.input-group-prepend-icon:hover {
+  background-color: #b38f01;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+.forgot-password {
+  color: #edbc00;
+  cursor: pointer;
+}
+.forgot-password:hover {
+  color: #b38f01;
+}
+.logo {
+  height: 228px;
+  width: 228px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+.logo-wrap {
+  text-align: center;
+  align-items: center;
+}
+
+.main-name {
+  padding-top: 20px;
+  font-size: 45px;
+  color: #edbc00;
+}
+.navbar {
+  background-color: #99154a !important;
+  margin: 0;
+}
+.user-img {
+  border-radius: 25px;
+}
+.dropdown-menu {
+  left: -70px;
+}
+.brand-name {
+  font-weight: 400;
+  font-size: 30px;
+  color: #edbc00;
+}
+*/
+
+.player-name {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 10px;
+}
+.msg-app-container {
+  height: 85vh;
+}
+.player-cols-container {
+  width: 21vw;
+  margin: 15px 3px 15px 15px;
+  float: left;
+  background-color: rgb(27, 25, 34);
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.message-board-container {
+  float: left;
+  margin: 15px 15px 15px 2px;
+  width: 75vw;
+}
+.player-names-container {
+  margin-bottom: 2px;
+  color: white;
+  padding: 15px;
+  background-color: rgb(40, 37, 53);
+}
+.player-names-container:hover {
+  background-color: rgb(27, 25, 34);
+}
+.dp {
+  border-radius: 40px;
+  width: 60px;
+  height: 60px;
+}
+
+.Chat {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Chat section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(40, 37, 53);
+}
+
+.message-body {
+  padding: 10px;
+  height: 65vh;
+  margin: 5vh 2vh 5vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-form {
+  height: 10vh;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.message-form button {
+  width: 20%;
+  background-color: #282c34;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.message-form input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(58, 58, 58);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.message-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.message-body p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+  text-align: left;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #7865ac;
+  align-self: flex-end;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
