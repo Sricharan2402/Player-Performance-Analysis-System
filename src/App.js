@@ -6,6 +6,8 @@ import HomePage from "./components/Homepage";
 import PrivateRoute from "./components/PrivateRoute";
 import ChatComponent from "./components/chat/ChatComponent";
 import ChatRoomComponent from "./components/chatRoom/ChatRoomComponent";
+import { PlayerStats, MatchReport, TeamStats } from "./components/Stats";
+import UploadData from "./components/admin/UploadData";
 export default function App() {
   return (
     <div className="App" style={{ height: "100vh" }}>
@@ -20,6 +22,10 @@ export default function App() {
               path="/chatroom"
               component={ChatRoomComponent}
             />
+            <PrivateRoute exact path="/playerstats" component={PlayerStats} />
+            <PrivateRoute exact path="/teamstats" component={TeamStats} />
+            <PrivateRoute exact path="/matchreport" component={MatchReport} />
+            <PrivateRoute exact path="/uploaddata" component={UploadData} />
           </Switch>
         </AuthProvider>
       </Router>

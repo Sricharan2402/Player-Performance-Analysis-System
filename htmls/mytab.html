@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function initViz() {
+        var containerDiv = document.getElementById("vizContainer"),
+          url =
+            "https://public.tableau.com/views/CFprofiletemplate/Playerprofile";
+        var viz = new tableau.Viz(containerDiv, url);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="vizContainer"></div>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  </body>
+</html>

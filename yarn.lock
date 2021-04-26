@@ -7563,6 +7563,11 @@
     "pify" "^2.0.0"
     "strip-bom" "^3.0.0"
 
+"load-script@^1.0.0":
+  "integrity" "sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ="
+  "resolved" "https://registry.npmjs.org/load-script/-/load-script-1.0.0.tgz"
+  "version" "1.0.0"
+
 "loader-runner@^2.4.0":
   "integrity" "sha512-Jsmr89RcXGIwivFY21FcRrisYZfvLMTWx5kOLc+JTxtpBOG6xML0vzbc6SEQG2FO9/4Fc3wW4LVcB5DmGflaRw=="
   "resolved" "https://registry.npmjs.org/loader-runner/-/loader-runner-2.4.0.tgz"
@@ -9867,6 +9872,13 @@
   "integrity" "sha512-g66N21BTzuYWmQhWiTkBPwkrHcK5wNVpq/xkaAyWWDOl3zo9Yx/Q3nG+yVlj966Xi3E5ABC7a/Efk2LNAzzGPA=="
   "resolved" "https://registry.npmjs.org/react-firebase-hooks/-/react-firebase-hooks-3.0.3.tgz"
   "version" "3.0.3"
+
+"react-google-picker@^0.1.0":
+  "integrity" "sha512-0y3TtinsdNwEx77Upsmh7Q4bXuBt/d/KntQDNxLOIf2v77UQQi0FBYAtAkjrkP28IOX7gfcXhdY5XXZRGHSODw=="
+  "resolved" "https://registry.npmjs.org/react-google-picker/-/react-google-picker-0.1.0.tgz"
+  "version" "0.1.0"
+  dependencies:
+    "load-script" "^1.0.0"
 
 "react-is@^16.3.2", "react-is@^16.6.0", "react-is@^16.7.0", "react-is@^16.8.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="

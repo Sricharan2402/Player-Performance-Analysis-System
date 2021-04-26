@@ -314,3 +314,7 @@ Message
   height: 100%;
   background-color: rgb(40, 37, 53);
 }
+.vizContainer {
+  width: 100%;
+  height: 100%;
+}

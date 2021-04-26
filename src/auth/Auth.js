@@ -28,10 +28,19 @@ export function AuthProvider({ children }) {
       .then((doc) => {
         setUserType(doc.data().Role);
       });
+    setUserDetails({
+      Name: "System_admin",
+      Age: 0,
+      Email: "futficianado.main@gmail.com",
+      Gender: "",
+      Nickname: "",
+      photoURL:
+        "https://drive.google.com/uc?id=1zTXjzbWJFn34UoHHB76ynP_rTJSZtY_j",
+    });
   }
 
   useEffect(() => {
-    if (userType)
+    if (userType && userType != "admin")
       db.collection(userType)
         .doc(currentUser.uid)
         .get()

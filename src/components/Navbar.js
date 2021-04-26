@@ -37,16 +37,23 @@ export default function Navbar() {
           />
         </a>
         <div className="dropdown-menu">
-          <a className="dropdown-item" href="#">
-            Profile
-          </a>
-          <a className="dropdown-item" href="messenger">
-            Messages
-          </a>
-          <a className="dropdown-item" href="chatroom">
-            Chat Room
-          </a>
-          <div className="dropdown-divider" />
+          {userType != "admin" ? (
+            <>
+              <a className="dropdown-item" href="#">
+                Profile
+              </a>
+              <a className="dropdown-item" href="messenger">
+                Messages
+              </a>
+              <a className="dropdown-item" href="chatroom">
+                Chat Room
+              </a>
+              <div className="dropdown-divider" />
+            </>
+          ) : (
+            <></>
+          )}
+
           <button
             className="dropdown-item"
             type="submit"
