@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className="dropdown-menu">
           {userType != "admin" ? (
             <>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="profile">
                 Profile
               </a>
               <a className="dropdown-item" href="messenger">

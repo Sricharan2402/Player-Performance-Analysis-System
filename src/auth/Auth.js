@@ -55,23 +55,7 @@ export function AuthProvider({ children }) {
           });
         });
   }, [userType]);
-  /*
-  async function getUserInfo() {
-    db.collection("players")
-      .doc(currentUser.uid)
-      .get()
-      .then((doc) => {
-        setUserDetails({
-          Name: doc.data().Name,
-          Age: doc.data().Age,
-          Email: doc.data().Email,
-          Gender: doc.data().Gender,
-          Nickname: doc.data().Nickname,
-          photoURL: doc.data().photoURL,
-        });
-      });
-  }
-  */
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
