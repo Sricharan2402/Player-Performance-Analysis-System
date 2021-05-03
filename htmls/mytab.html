@@ -3,14 +3,13 @@
   <head>
     <script>
       function initViz() {
-        var containerDiv = document.getElementById("vizContainer"),
-          url =
-            "https://public.tableau.com/views/CFprofiletemplate/Playerprofile";
-        var viz = new tableau.Viz(containerDiv, url);
+        const a = { type: "a" };
+        a.type("b");
+        console.log(a.type);
       }
     </script>
   </head>
-  <body>
+  <body onload="initViz()">
     <div class="vizContainer"></div>
     <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
   </body>
